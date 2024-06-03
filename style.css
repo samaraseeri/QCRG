@@ -1,37 +1,30 @@
 /* style.css */
 
-/* Set the background color */
+/* Set the background image */
 body {
-  background-color: #f2f2f2; /* Light gray background color */
+  background-image: url('path_to_your_image.jpg'); /* Replace 'path_to_your_image.jpg' with the actual path to your background image */
+  background-size: cover; /* Ensure the background image covers the entire viewport */
+  background-attachment: fixed; /* Fix the background image while scrolling */
+  color: #333; /* Dark gray text color for contrast */
 }
 
-/* Style the headings */
+/* Style the headings, paragraphs, and other elements as previously mentioned */
 h1, h2 {
-  color: #333; /* Dark gray text color */
-  text-align: center; /* Center align the headings */
+  /* Heading styles */
 }
 
-/* Style the paragraphs */
 p {
-  color: #666; /* Medium gray text color */
-  font-size: 16px; /* Medium font size */
-  line-height: 1.6; /* Increased line height for better readability */
-  margin-bottom: 20px; /* Add some space at the bottom of paragraphs */
+  /* Paragraph styles */
 }
 
-/* Style the unordered list */
 ul {
-  color: #666; /* Medium gray text color */
-  margin-bottom: 20px; /* Add some space at the bottom of the list */
+  /* Unordered list styles */
 }
 
-/* Style the links */
 a {
-  color: #007bff; /* Blue link color */
-  text-decoration: none; /* Remove underline from links */
+  /* Link styles */
 }
 
-/* Style the links on hover */
 a:hover {
-  text-decoration: underline; /* Underline links on hover */
+  /* Link hover styles */
 }
