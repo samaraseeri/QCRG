@@ -2,10 +2,10 @@
 
 /* Set the background image */
 body {
-  background-image: url('https://raw.githubusercontent.com/samaraseeri/QCRG/main/image%20(1).png'); /* Use raw.githubusercontent.com to access the raw image */
-  background-size: cover; /* Ensure the background image covers the entire viewport */
+  background-image: url('https://raw.githubusercontent.com/samaraseeri/QCRG/main/image.png'); /* Use raw.githubusercontent.com to access the raw image */
+  background-size: 50%; /* Set the background image size to cover 50% of the viewport */
   background-attachment: fixed; /* Fix the background image while scrolling */
-  color: #f2f2f2; /* Light text color for contrast */
+  color: #ffffff; /* Adjusted text color for better visibility */
 }
 
 /* Style the headings, paragraphs, and other elements as previously mentioned */
