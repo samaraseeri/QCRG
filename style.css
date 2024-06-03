@@ -1,12 +1,12 @@
 /* style.css */
 
-/* Set the background image */
+/* Set the background image and color */
 body {
   background-image: url('https://raw.githubusercontent.com/samaraseeri/QCRG/main/image.png'); /* Use raw.githubusercontent.com to access the raw image */
+  background-color: #f2f2f2; /* Lighter background color for better contrast with text */
   background-size: cover; /* Ensure the background image covers the entire viewport */
   background-attachment: fixed; /* Fix the background image while scrolling */
-  background-position: center 50px; /* Move the background image down by 50 pixels */
-  color: #ffffff; /* Adjusted text color for better visibility */
+  color: #000000; /* Adjusted text color for better visibility */
 }
 
 /* Style the headings, paragraphs, and other elements as previously mentioned */
