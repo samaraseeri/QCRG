@@ -2,15 +2,7 @@ body {
   background-color: #9098ff; /* Light blue background */
 }
 
-.sidebar {
-  float: left; /* Position sidebar on the left */
-  width: 200px; /* Define sidebar width */
-  padding: 15px;
-  border-right: 2px solid #ddd; /* Right border for separation */
-  margin-bottom: 20px; /* Spacing for content below sidebar */
-}
-
-.sidebar h2 {
+.sidebar h2 { /* Targets h2 elements within the .sidebar section */
   font-size: 1.5em; /* Larger heading size for sidebars */
   margin-bottom: 10px; /* Add some space below heading */
   border-bottom: 1px solid #ddd; /* Bottom border for separation */
