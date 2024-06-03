@@ -2,11 +2,14 @@
 
 /* Set the background image and color */
 body {
-  background-image: url('https://raw.githubusercontent.com/samaraseeri/QCRG/main/image%20(1).png'); /* Use raw.githubusercontent.com to access the raw image */
   background-color: #f8f8f8; /* Very light off-white background color for optimal contrast with text */
-  background-size: cover; /* Ensure the background image covers the entire viewport */
-  background-attachment: fixed; /* Fix the background image while scrolling */
   color: #000000; /* Adjusted text color for better visibility */
+}
+
+/* Position the picture on the side */
+.picture-container {
+  float: right; /* Float the picture to the right side of the content */
+  margin-left: 20px; /* Add some space between the picture and the text */
 }
 
 /* Style the headings, paragraphs, and other elements as previously mentioned */
