@@ -2,20 +2,94 @@ body {
   background-color: #9098ff; /* Light blue background */
 }
 
-#quantum-computer {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background-color: #d0e0ff; /* Light yellow quantum computer shape */
-  margin: 0 auto;
+.banner {
+  background-image: linear-gradient(to right, #fcab00, #f87171); /* Orange gradient background */
+  color: #fff; /* White text for better contrast */
+  padding: 15px 20px;
+  margin: 10px 0 20px; /* Spacing around banner */
+  display: flex; /* Allow alignment of text within the banner */
+  align-items: center; /* Center text vertically within the banner */
+  border-radius: 5px; /* Rounded corners for a softer look */
 }
 
-#quantum-computer span {
+.banner h2 {
+  font-size: 1.5em; /* Larger heading size for banners */
+  margin-right: 10px; /* Add some space between heading and potential icon */
+}
+
+h1, h2 {
+  margin: 1em 0; /* Maintain consistent spacing for headings outside banners */
+  font-weight: bold; /* Make headings stand out */
+}
+
+h1 {
+  font-size: 2em; /* Increase main heading size slightly */
+}
+
+.container {
+  max-width: 800px; /* Limit content width for better responsiveness */
+  margin: 0 auto; /* Center the content horizontally */
+}
+Use code with caution.
+content_copy
+Explanation:
+
+We define a new class .banner for styling the banners.
+Banners use a linear gradient background and white text for good contrast.
+They have padding, margin for spacing, and rounded corners.
+The .banner class uses display: flex and align-items: center to allow centering text within the banner.
+Headings within banners are slightly larger with some spacing.
+Implementation:
+
+Wrap your existing <h1> and <h2> elements (or only the ones you want under banners) within a <div> element with the class .banner.
+Optionally, add an icon element (e.g., <i class="fas fa-atom"></i> using Font Awesome) within the banner next to the heading for a visual element.
+Option 2: Sidebars with Lines and Content
+
+This approach creates sidebars with lines extending from your titles and allows including content within the sidebar:
+
+CSS
+body {
+  background-color: #9098ff; /* Light blue background */
+}
+
+.sidebar {
+  float: left; /* Position sidebar on the left */
+  width: 200px; /* Define sidebar width */
+  padding: 15px;
+  border-right: 2px solid #ddd; /* Right border for separation */
+  margin-bottom: 20px; /* Spacing for content below sidebar */
+}
+
+.sidebar h2 {
+  font-size: 1.5em; /* Larger heading size for sidebars */
+  margin-bottom: 10px; /* Add some space below heading */
+  border-bottom: 1px solid #ddd; /* Bottom border for separation */
+  padding-bottom: 5px; /* Spacing below bottom border */
+}
+
+h1, h2 {
+  margin: 1em 0; /* Maintain consistent spacing for headings */
+  font-weight: bold; /* Make headings stand out */
+}
+
+h1 {
+  font-size: 2em; /* Increase main heading size slightly */
+  position: relative; /* Allow positioning of line element */
+}
+
+h1:after {
+  content: ""; /* Add an empty element for the line */
   display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 30px;
-  color: #f5f5f5; /* Dark gray qubit symbol */
+  width: 100%; /* Line spans the full width */
+  height: 2px; /* Line thickness */
+  background-color: #ddd; /* Line color */
+  position: absolute; /* Position the line relative to the heading */
+  bottom: -5px; /* Position the line below the heading */
+  left: 0; /* Align the line to the left edge */
+}
+
+.container {
+  /* Adjust container width if needed to accommodate sidebar */
+  max-width: 600px; /* Example adjustment */
+  margin: 0 auto; /* Center the content horizontally */
 }
