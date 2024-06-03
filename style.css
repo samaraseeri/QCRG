@@ -18,25 +18,6 @@ p {
   line-height: 1.5; /* Improve readability with line spacing */
 }
 
-#quantum-computer {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: linear-gradient(to right, #fcab00, #f87171); /* Orange gradient for quantum computer shape */
-  margin: 0 auto 20px; /* Center and add some bottom margin */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-}
-
-#quantum-computer span {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 30px;
-  color: #fff; /* White qubit symbol for better contrast */
-}
-
 .container {
   max-width: 800px; /* Limit content width for better responsiveness */
   margin: 0 auto; /* Center the content horizontally */
@@ -47,7 +28,7 @@ p {
 }
 
 a {
-  color: #fcab00; /* Orange color for links */
+  color: #333; /* Dark gray color for links */
   text-decoration: none; /* Remove underline from links */
 }
 
@@ -61,4 +42,11 @@ a:hover {
 
 .join-us a {
   font-weight: bold; /* Make social media link stand out */
+}
+
+/* Optional: Add a subtle border to sections for separation */
+.about-group, .activities, .suggested-reading, .join-us {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
 }
