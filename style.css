@@ -1,11 +1,9 @@
 /* style.css */
 
-/* Set the background image */
+/* Set the background color */
 body {
-  background-image: url('image.png'); /* Replace 'path_to_your_image.jpg' with the actual path to your background image */
-  background-size: cover; /* Ensure the background image covers the entire viewport */
-  background-attachment: fixed; /* Fix the background image while scrolling */
-  color: #333; /* Dark gray text color for contrast */
+  background-color: #050505; /* Darker background color */
+  color: #f2f2f2; /* Light text color for contrast */
 }
 
 /* Style the headings, paragraphs, and other elements as previously mentioned */
