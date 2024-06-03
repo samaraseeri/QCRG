@@ -1,34 +1,24 @@
 /* style.css */
 
-/* Set the background image and color */
+/* Set the background color and styles for the content */
 body {
   background-color: #f8f8f8; /* Very light off-white background color for optimal contrast with text */
   color: #000000; /* Adjusted text color for better visibility */
 }
 
-/* Position the picture on the side */
-.picture-container {
-  float: right; /* Float the picture to the right side of the content */
-  margin-left: 20px; /* Add some space between the picture and the text */
+.content {
+  /* Styles for the main content area */
 }
 
-/* Style the headings, paragraphs, and other elements as previously mentioned */
-h1, h2 {
-  /* Heading styles */
+/* Position the image container at the bottom center */
+.image-container {
+  text-align: center; /* Center-align the images */
+  position: absolute; /* Position the container absolutely */
+  bottom: 0; /* Align the container to the bottom of the page */
+  width: 100%; /* Set the width to 100% to span the entire page */
+  padding: 20px 0; /* Add some padding for spacing */
 }
 
-p {
-  /* Paragraph styles */
-}
-
-ul {
-  /* Unordered list styles */
-}
-
-a {
-  /* Link styles */
-}
-
-a:hover {
-  /* Link hover styles */
+.image-container img {
+  margin: 0 10px; /* Add some horizontal margin between the images */
 }
