@@ -2,8 +2,8 @@
 
 /* Set the background image and color */
 body {
-  background-image: url('https://raw.githubusercontent.com/samaraseeri/QCRG/main/image%20(1).png'); /* Use raw.githubusercontent.com to access the raw image */
-  background-color: #ffffff; /* Lighter background color for better contrast with text */
+  background-image: url('https://raw.githubusercontent.com/samaraseeri/QCRG/main/image.png'); /* Use raw.githubusercontent.com to access the raw image */
+  background-color: #ffffff; /* Pure white background color for maximum contrast with text */
   background-size: cover; /* Ensure the background image covers the entire viewport */
   background-attachment: fixed; /* Fix the background image while scrolling */
   color: #000000; /* Adjusted text color for better visibility */
