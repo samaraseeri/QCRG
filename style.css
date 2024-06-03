@@ -10,15 +10,16 @@ body {
   /* Styles for the main content area */
 }
 
-/* Position the image container at the bottom center */
+/* Position the image container at the top right */
 .image-container {
-  text-align: center; /* Center-align the images */
   position: absolute; /* Position the container absolutely */
-  bottom: 0; /* Align the container to the bottom of the page */
-  width: 100%; /* Set the width to 100% to span the entire page */
-  padding: 20px 0; /* Add some padding for spacing */
+  top: 0; /* Align the container to the top of the page */
+  right: 0; /* Align the container to the right of the page */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack the images vertically */
+  align-items: flex-end; /* Align the images to the right */
 }
 
 .image-container img {
-  margin: 0 10px; /* Add some horizontal margin between the images */
+  margin-bottom: 10px; /* Add some vertical margin between the images */
 }
