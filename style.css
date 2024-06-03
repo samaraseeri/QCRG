@@ -15,8 +15,8 @@ body {
 /* Position the image container at the bottom center */
 .image-container {
   position: absolute; /* Position the container absolutely */
-  bottom: 20px; /* Align the container 20px from the bottom of the page */
-  left: 50%; /* Align the container horizontally at 50% */
+  bottom: 10px; /* Align the container 20px from the bottom of the page */
+  left: 30%; /* Align the container horizontally at 50% */
   transform: translateX(-50%); /* Adjust for centering using transform */
   display: flex; /* Use flexbox for layout */
   justify-content: center; /* Center-align the images */
