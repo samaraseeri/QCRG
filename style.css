@@ -2,10 +2,10 @@
 
 /* Set the background image */
 body {
-  background-image: url('image.jpg'); /* Replace 'path_to_your_image.jpg' with the actual path to your background image */
+  background-image: url('https://raw.githubusercontent.com/samaraseeri/QCRG/main/image.png'); /* Use raw.githubusercontent.com to access the raw image */
   background-size: cover; /* Ensure the background image covers the entire viewport */
   background-attachment: fixed; /* Fix the background image while scrolling */
-  color: #333; /* Dark gray text color for contrast */
+  color: #f2f2f2; /* Light text color for contrast */
 }
 
 /* Style the headings, paragraphs, and other elements as previously mentioned */
