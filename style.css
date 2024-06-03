@@ -3,8 +3,9 @@
 /* Set the background image */
 body {
   background-image: url('https://raw.githubusercontent.com/samaraseeri/QCRG/main/image.png'); /* Use raw.githubusercontent.com to access the raw image */
-  background-size: 50%; /* Set the background image size to cover 50% of the viewport */
+  background-size: cover; /* Ensure the background image covers the entire viewport */
   background-attachment: fixed; /* Fix the background image while scrolling */
+  background-position: center 50px; /* Move the background image down by 50 pixels */
   color: #ffffff; /* Adjusted text color for better visibility */
 }
 
