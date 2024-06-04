@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  text-align: center; /* Center-align the text content */
+  text-align: left; /* Align the text content to the left */
 }
 
 .image-container {
