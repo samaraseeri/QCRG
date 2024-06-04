@@ -17,8 +17,5 @@ body {
 
 .activity {
   text-align: left; /* Align the activity list to the left */
-}
-
-.activity p {
-  margin: 0; /* Remove default margin for the paragraphs */
+  display: inline-block; /* Make the activity list centered */
 }
