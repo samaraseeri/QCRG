@@ -15,7 +15,8 @@ body {
   text-align: center; /* Center-align the text content */
 }
 
-.activity {
-  text-align: left; /* Align the activity list to the left */
-  display: inline-block; /* Make the activity list centered */
+.image-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center-align the images horizontally */
+  gap: 20px; /* Add some spacing between the images */
 }
