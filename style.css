@@ -148,38 +148,3 @@ a:active {
     width: 200px;
     ... (other styles)
 }
-
-.tagembed-widget
- {
-  
-float
-: right;
-  
-/* Add any additional styling as needed */
-
-}
-
-/* Styles for screens less than 768px wide (mobile) */
-@media (max-width: 768px) {
-  .sidenav {
-    width: 0; /* Collapse sidenav on mobile */
-    transition: width 0.5s ease-in-out; /* Smooth transition */
-  }
-  
-  .content {
-    margin-left: 0; /* Remove margin applied when sidenav is visible */
-  }
-}
-
-/* Optional: Show/Hide sidenav on mobile with a button */
-.sidenav-toggle {
-  display: none; /* Hidden by default */
-}
-
-@media (max-width: 768px) {
-  .sidenav-toggle {
-    display: block; /* Show toggle button on mobile */
-  }
-}
-
-/* Add functionality to toggle sidenav visibility using JavaScript */
