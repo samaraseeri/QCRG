@@ -134,11 +134,31 @@ a:visited {
 /* mouse over link */
 
 a:hover {
-    color: black;
+    color: white;
 }
 
 /* selected link */
 
 a:active {
     color: white;
+}
+.main-container {
+  display: flex; /* Use flexbox for layout */
+}
+
+.sidenav {
+  width: 200px; /* Initial width */
+  flex: 0 0 200px; /* Maintain fixed width on larger screens */
+  transition: flex 0.5s ease-in-out; /* Smooth transition */
+}
+
+.content {
+  flex: 1; /* Flexible content area */
+}
+
+/* Styles for screens less than 768px wide (mobile) */
+@media (max-width: 768px) {
+  .sidenav {
+    flex: 0 0 0; /* Collapse sidenav on mobile */
+  }
 }
