@@ -64,7 +64,7 @@ th, td {
 /* Side navigation links */
 
 .sidenav a {
-    color: black;
+    color: white;
     padding: 16px;
     text-decoration: none;
     display: block;
@@ -74,7 +74,7 @@ th, td {
 
 .sidenav a:hover {
     background-color: #00303F;
-    color: black;
+    color: white;
 }
 
 /* Style the content */
