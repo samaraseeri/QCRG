@@ -122,7 +122,7 @@ th, td {
 /* unvisited link */
 
 a:link {
-    color: yellow;
+    color: navy;
 }
 
 /* visited link */
@@ -142,15 +142,7 @@ a:hover {
 a:active {
     color: navy;
 }
-.right-sidenav {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 350px; /* Adjust width as needed */
-  height: 100vh; /* 100vh for full viewport height */
-  background-color: #f0f0f0; /* Optional background color */
-  overflow-y: auto; /* Enable scrolling if content overflows */
-}
+
 /* Default styles (sidenav takes up 200px) */
 .sidenav {
     width: 200px;
