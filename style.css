@@ -140,7 +140,7 @@ a:hover {
 /* selected link */
 
 a:active {
-    color: white;
+    color: navy;
 }
 /* Default styles (sidenav takes up 200px) */
 .sidenav {
