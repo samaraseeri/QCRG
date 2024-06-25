@@ -42,7 +42,7 @@ th, td {
 .dashed {border-style: dashed;}
 .hidden {border-style: hidden;}
 .solid {border-style: solid;
-         font-size: 15px;
+         font-size: 10px;
          width: 500px;
          margin-left: 25px;}
 
@@ -122,7 +122,7 @@ th, td {
 /* unvisited link */
 
 a:link {
-    color: navy;
+    color: lightpurple;
 }
 
 /* visited link */
@@ -134,13 +134,13 @@ a:visited {
 /* mouse over link */
 
 a:hover {
-    color: navy;
+    color: lightpurple;
 }
 
 /* selected link */
 
 a:active {
-    color: navy;
+    color: lightpurple;
 }
 
 /* Default styles (sidenav takes up 200px) */
