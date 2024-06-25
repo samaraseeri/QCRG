@@ -1,35 +1,57 @@
-.header {
-    background-color: lightgray;
-    margin: 10px;
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 h1 {
-    font-family: "Aptos Display", sans-serif;
-    font-size: 20.0pt;
-    color: #0F4761;
-}
-
-h2 {
-    font-family: "Aptos", sans-serif;
-    font-size: 12.0pt;
-    color: #0F4761;
+    font-size: 24px;
+    color: #0070C0;
+    margin-bottom: 20px;
 }
 
 p {
-    font-family: "Aptos", sans-serif;
-    font-size: 12.0pt;
-    color: #595959;
+    font-size: 16px;
+    margin-bottom: 15px;
 }
 
-span {
-    font-family: "Times New Roman", serif;
-    color: #0F4761;
+a {
+    color: #1155CC;
+    text-decoration: none;
 }
 
-span.Heading3Char {
-    font-size: 14.0pt;
+a:hover {
+    text-decoration: underline;
 }
 
-span.Heading7Char {
-    color: #595959;
+/* Style for tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
 }
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Add more styles as needed */
