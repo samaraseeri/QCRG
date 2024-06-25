@@ -142,23 +142,33 @@ a:hover {
 a:active {
     color: white;
 }
-.main-container {
-  display: flex; /* Use flexbox for layout */
-}
-
+/* Default styles (sidenav takes up 200px) */
 .sidenav {
-  width: 200px; /* Initial width */
-  flex: 0 0 200px; /* Maintain fixed width on larger screens */
-  transition: flex 0.5s ease-in-out; /* Smooth transition */
-}
-
-.content {
-  flex: 1; /* Flexible content area */
+    width: 200px;
+    ... (other styles)
 }
 
 /* Styles for screens less than 768px wide (mobile) */
 @media (max-width: 768px) {
   .sidenav {
-    flex: 0 0 0; /* Collapse sidenav on mobile */
+    width: 0; /* Collapse sidenav on mobile */
+    transition: width 0.5s ease-in-out; /* Smooth transition */
+  }
+  
+  .content {
+    margin-left: 0; /* Remove margin applied when sidenav is visible */
   }
 }
+
+/* Optional: Show/Hide sidenav on mobile with a button */
+.sidenav-toggle {
+  display: none; /* Hidden by default */
+}
+
+@media (max-width: 768px) {
+  .sidenav-toggle {
+    display: block; /* Show toggle button on mobile */
+  }
+}
+
+/* Add functionality to toggle sidenav visibility using JavaScript */
