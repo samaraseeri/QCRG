@@ -187,9 +187,9 @@ a:active {
   background-color: #4CAF50; /* Green color for buttons */
   color: white;
   padding: 10px 20px;
-  margin: 5px; /* Adjust margin for spacing between buttons */
+  /* No margin needed for vertical stacking */
   border: none;
   cursor: pointer; /* Indicate clickable buttons */
-  border-radius: 5px; /* Rounded corners for buttons */
+  border-radius: 50%; /* Make buttons circular */
   font-size: 1.1em; /* Increase button font size by 10% */
 }
