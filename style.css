@@ -192,6 +192,6 @@ a:active {
   cursor: pointer; /* Indicate clickable buttons */
   border-radius: 50%; /* Make buttons circular */
   font-size: 1.1em; /* Increase button font size by 10% (existing) */
-  width: 130%; /* Increase button width by 10% */
-  height: 130%; /* Increase button height by 10% */
+  width: 120%; /* Increase button width by 10% */
+  height: 120%; /* Increase button height by 10% */
 }
