@@ -175,9 +175,11 @@ a:active {
 /* Style the buttons */
 
 .button-container {
-  display: flex;
-  justify-content: flex-end; /* Align buttons to the right */
-  margin-top: 20px;
+  display: flex; /* Flexbox for horizontal arrangement */
+  flex-direction: column; /* Stack buttons vertically */
+  position: fixed; /* Fix position in upper right corner */
+  top: 10px; /* Adjust top position from the top of the page */
+  right: 10px; /* Adjust right position from the right edge */
 }
 
 .course-button,
@@ -185,8 +187,9 @@ a:active {
   background-color: #4CAF50; /* Green color for buttons */
   color: white;
   padding: 10px 20px;
-  margin: 5px;
+  margin: 5px; /* Adjust margin for spacing between buttons */
   border: none;
   cursor: pointer; /* Indicate clickable buttons */
   border-radius: 5px; /* Rounded corners for buttons */
+  font-size: 1.1em; /* Increase button font size by 10% */
 }
