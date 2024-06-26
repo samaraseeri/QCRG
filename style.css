@@ -1,37 +1,39 @@
 /* Main styling */
 
+ 
+/* formatting of main body */
+
 body {
-  margin: 0;
-  background-color: lightyellow;
+    margin: 0;
+    background-color: lightyellow;
 }
 
 /* font color and placement of main title */
 
 h1 {
-  color: black;
-  margin-left: 20px;
+    color: black;
+    margin-left: 20px;
 }
 
 /* font style and size for paragraphs */
 
-p { 
-  font-family: verdana;
-  font-size: 18px;
-  color: black;
-  margin-bottom: 5px; /* Reduce margin for tighter content */
+p { 
+   font-family: verdana;
+   font-size: 18px;
+   color: black;
 }
 
 /* formatting of tables */
 
 th, td {
-  padding: 15px;
-  text-align: left;
-  background-color: #00303F;
-  color: black;
+    padding: 15px;
+    text-align: left;
+    background-color: #00303F;
+    color: black;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 
@@ -40,13 +42,133 @@ th, td {
 .dashed {border-style: dashed;}
 .hidden {border-style: hidden;}
 .solid {border-style: solid;
-  font-size: 10px;
-  width: 500px;
-  margin-left: 25px;}
+         font-size: 10px;
+         width: 500px;
+         margin-left: 25px;}
 
 
 /* Style the side navigation */
 
 .sidenav {
-  height: 100vh; /* 100% viewport height */
-  width: 200px;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #00303F;
+    overflow-x: hidden;
+}
+
+
+/* Side navigation links */
+
+.sidenav a {
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color on hover */
+
+.sidenav a:hover {
+    background-color: #00303F;
+    color: white;
+}
+
+/* Style the content */
+
+.content {
+    margin-left: 200px;
+    padding-left: 20px;
+    color: black;
+}
+
+
+/* Columns for images */
+
+.column {
+    float: left;
+    width: 200px;
+    padding: 10px;
+}
+
+.column img {
+    float: center;
+    margin-top: 12px;
+}
+
+.column desc {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+
+.footer {
+    background-color: #00303F;
+    color: black;
+    padding: 10px;
+}
+
+/* unvisited link */
+
+a:link {
+    color: lightpurple;
+}
+
+/* visited link */
+
+a:visited {
+    color: hotpink;
+}
+
+/* mouse over link */
+
+a:hover {
+    color: lightpurple;
+}
+
+/* selected link */
+
+a:active {
+    color: lightpurple;
+}
+
+/* Default styles (sidenav takes up 200px) */
+.sidenav {
+    width: 200px;
+    ... (other styles)
+}
+/* Styles for screens less than 768px wide (mobile) */
+@media (max-width: 768px) {
+  .sidenav {
+    width: 0; /* Collapse sidenav on mobile */
+    transition: width 0.5s ease-in-out; /* Smooth transition */
+  }
+  
+  .content {
+    margin-left: 0; /* Remove margin applied when sidenav is visible */
+  }
+}
+
+/* Optional: Show/Hide sidenav on mobile with a button */
+.sidenav-toggle {
+  display: none; /* Hidden by default */
+}
+
+@media (max-width: 768px) {
+  .sidenav-toggle {
+    display: block; /* Show toggle button on mobile */
+  }
+}
+
+/* Add functionality to toggle sidenav visibility using JavaScript */
