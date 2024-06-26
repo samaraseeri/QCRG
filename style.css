@@ -160,10 +160,6 @@ a:active {
   }
 }
 
-/* Optional: Show/Hide sidenav on mobile with a button */
-.sidenav-toggle {
-  display: none; /* Hidden by default */
-}
 
 @media (max-width: 768px) {
   .sidenav-toggle {
