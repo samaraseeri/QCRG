@@ -183,7 +183,8 @@ a:active {
 }
 
 .course-button,
-.meeting-button {
+.meeting-button,
+.UsefulLinks-button {
   background-color: #C2F0F0; /* Green color for buttons */
   color: white;
   padding: 10px 20px;
