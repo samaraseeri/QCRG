@@ -197,3 +197,8 @@ a:active {
   width: 100%; /* Increase button width by 10% */
   height: 100%; /* Increase button height by 10% */
 }
+.suggestion-box-container {
+  position: absolute;
+  top: 100px; /* Adjust this value as needed */
+  left: 10px; /* Adjust this value as needed */
+}
