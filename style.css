@@ -197,23 +197,21 @@ a:active {
   width: 100%; /* Increase button width by 10% */
   height: 100%; /* Increase button height by 10% */
 }
-/* Add your existing styles here */
-
 .suggestion-box-container {
   position: absolute;
-  bottom: 20px; /* Adjust this value as needed */
-  right: 20px; /* Adjust this value as needed */
-  background-color: #C2F0F0 /* Light gray background */
+  bottom: 20px;
+  right: 20px;
+  background-color: #C2F0F0;
   padding: 15px;
   border-radius: 5px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+
+  /* Hide on mobile and tablet devices */
+  display: none;
 }
 
-.suggestion-box-container h2 {
-  margin-bottom: 10px;
-}
-
-.suggestion-box-container label {
-  display: block;
-  margin-bottom: 5px;
+@media (min-width: 768px) { /* Adjust the breakpoint as needed */
+  .suggestion-box-container {
+    display: block;
+  }
 }
