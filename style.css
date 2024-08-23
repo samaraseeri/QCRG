@@ -200,5 +200,5 @@ a:active {
 .suggestion-box-container {
   position: absolute;
   top: 100px; /* Adjust this value as needed */
-  left: 1000px; /* Adjust this value as needed */
+  right: 10px; /* Adjust this value as needed */
 }
