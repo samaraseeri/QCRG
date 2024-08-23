@@ -6,18 +6,22 @@
     <title>Quantum Computation Reading Group at KAUST</title>
     <link rel="stylesheet" href="style.css">
 </head>
-    <body>
-  <div class="suggestion-box-container">
-    <h2>Suggestion Box</h2>
-    <form action="process_suggestion.py" method="post">
-      <label for="suggestion">Your Suggestion:</label>
-      <textarea id="suggestion" name="suggestion" rows="5" cols="30"></textarea>
-      <br>
-      <input type="submit" value="Submit Suggestion">
-    </form>
+   </head>
+<body>
+  <div class="scrollable-content">
+    <div class="suggestion-box-container">
+      <h2>Suggestion Box</h2>
+      <form action="process_suggestion.py" method="post">
+        <label for="suggestion">Your Suggestion:</label>
+        <textarea id="suggestion" name="suggestion" rows="5" cols="30"></textarea>
+        <br>
+        <input type="submit" value="Submit Suggestion">
+      </form>
+    </div>
   </div>
 
-  </body>
+  <script src="process_suggestion.js"></script>
+</body>
     <style>
         /* Add your custom CSS styles here */
         body {
