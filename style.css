@@ -197,8 +197,23 @@ a:active {
   width: 100%; /* Increase button width by 10% */
   height: 100%; /* Increase button height by 10% */
 }
+/* Add your existing styles here */
+
 .suggestion-box-container {
   position: absolute;
   bottom: 20px; /* Adjust this value as needed */
   right: 20px; /* Adjust this value as needed */
+  background-color: #f5f5f5; /* Light gray background */
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
+}
+
+.suggestion-box-container h2 {
+  margin-bottom: 10px;
+}
+
+.suggestion-box-container label {
+  display: block;
+  margin-bottom: 5px;
 }
