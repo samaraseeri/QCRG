@@ -197,28 +197,4 @@ a:active {
   width: 100%; /* Increase button width by 10% */
   height: 100%; /* Increase button height by 10% */
 }
-/* ... other styles ... */
-
-.suggestion-box-container {
-  position: absolute;
-  bottom: 0;
-  right: 20px;
-  background-color: #C2F0F0;
-  padding: 15px;
-  border-radius: 5px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  width: 200px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-
-  /* Hide on mobile and tablet devices */
-  display: none;
-}
-
-@media (min-width: 768px) { /* Adjust the breakpoint as needed */
-  .suggestion-box-container {
-    display: block;
-  }
-}
 
