@@ -211,15 +211,14 @@ a:active {
   height: auto;
   display: flex;
   flex-direction: column;
+
+  /* Hide on mobile and tablet devices */
+  display: none;
 }
 
-.suggestion-box-container textarea {
-  width: 100%;
-  height: auto;
-}
-
-.scrollable-content {
-  overflow-y: auto;
-  height: calc(100vh - 100px); /* Adjust height as needed */
+@media (min-width: 768px) { /* Adjust the breakpoint as needed */
+  .suggestion-box-container {
+    display: block;
+  }
 }
 
