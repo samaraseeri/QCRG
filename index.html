@@ -6,6 +6,18 @@
     <title>Quantum Computation Reading Group at KAUST</title>
     <link rel="stylesheet" href="style.css">
 </head>
+    <body>
+  <div class="suggestion-box-container">
+    <h2>Suggestion Box</h2>
+    <form action="process_suggestion.py" method="post">
+      <label for="suggestion">Your Suggestion:</label>
+      <textarea id="suggestion" name="suggestion" rows="5" cols="30"></textarea>
+      <br>
+      <input type="submit" value="Submit Suggestion">
+    </form>
+  </div>
+
+  </body>
     <style>
         /* Add your custom CSS styles here */
         body {
@@ -64,12 +76,6 @@
   <a href="meetings.html" class="meetings-button">Presentations</a>
   <a href="resources.html" class="resources-button">Resources</a>
 </div>
-   <form action="process_suggestion.php" method="post">
-  <label for="suggestion">Your Suggestion:</label>
-  <textarea id="suggestion" name="suggestion" rows="5" cols="30"></textarea>
-  <br>
-  <input type="submit" value="Submit Suggestion">
-</form>
     <img src="https://raw.githubusercontent.com/samaraseeri/QCRG/main/IMG_3391.jpg" alt="Description of the picture" width="550" style="display: block; margin-left: auto; margin-right: auto;">
     <div class="container">
         <h1 id="welcome">Welcome to the Quantum Computation Reading Group at KAUST</h1>
