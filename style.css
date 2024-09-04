@@ -198,3 +198,13 @@ a:active {
   height: 100%; /* Increase button height by 10% */
 }
 
+.image-container .image-item {
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.image-container .image-item.active {
+  opacity: 1;
+}
+
