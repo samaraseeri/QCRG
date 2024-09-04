@@ -71,11 +71,18 @@
   }
 </style>
 
-<img class="image-container" src="https://raw.githubusercontent.com/samaraseeri/QCRG/main/ffd37288-1eab-4bea-8c45-f27c336b69f31.jpg" alt="Image description" width="550">
-<img class="image-container hidden" src="https://raw.githubusercontent.com/samaraseeri/QCRG/main/ffd37288-1eab-4bea-8c45-f27c336b69f31.jpg" alt="Image description" width="550">
-<img class="image-container hidden" src="https://raw.githubusercontent.com/samaraseeri/QCRG/main/ffd37288-1eab-4bea-8c45-f27c336b69f31.jpg" alt="Image description" width="550">
+<script>
+  const images = ["image1.jpg", "image2.jpg", "image3.jpg"];
+  let currentImageIndex = 0;
 
-<button onclick="document.getElementsByClassName('image-container')[1].classList.remove('hidden')">Show Image 2</button>
+  function changeImage() {
+    document.getElementById("myImage").src = images[currentImageIndex];
+    currentImageIndex = (currentImageIndex + 1) % images.length;  // Loop back to first image after last
+  }
+</script>
+
+<img id="myImage" src="https://raw.githubusercontent.com/samaraseeri/QCRG/main/ffd37288-1eab-4bea-8c45-f27c336b69f31.jpg" alt="Image description" width="550">
+<button onclick="changeImage()">Change Image</button>
     <! --<img src="https://raw.githubusercontent.com/samaraseeri/QCRG/main/ffd37288-1eab-4bea-8c45-f27c336b69f31.jpg" alt="Description of the picture" width="550" style="display: block; margin-left: auto; margin-right: auto;">-->
     <div class="container">
         <h1 id="welcome">Welcome to the Quantum Computation Reading Group at KAUST</h1>
