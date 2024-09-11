@@ -5,6 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quantum Computation Reading Group at KAUST - Courses</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Style for the modal */
+    .modal {
+      display: none; 
+      position: fixed; 
+      z-index: 1; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgb(0,0,0); 
+      background-color: rgba(0,0,0,0.4); 
+      padding-top: 60px;
+    }
+    .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto; 
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%; 
+    }
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -55,6 +90,9 @@
       <h3>Speaker: Tommaso Macri, QuEra Computing</h3>
       <h4>Title: Quantum Computing with QuEra’s Neutral-Atom Quantum Computers</h4>
       <p>
+        <strong>Registration:</strong> <a href="#" id="registrationLink">Click here to register</a>
+      </p>
+      <p>
         <strong>Abstract:</strong> In this talk, I will explore the pioneering technology and strategic vision of QuEra, focusing on its neutral-atom quantum computers. QuEra's approach combines analog and digital quantum computing, leveraging the strengths of neutral atoms for high coherence and unique qubit manipulation. The presentation will cover QuEra's ambitious roadmap, which includes significant milestones in quantum error correction and scalability for gate-based computing, as well as recent applications obtained in the context of analog quantum computing for quantum simulation, optimization, and machine learning.
       </p>
     </section>
@@ -77,8 +115,50 @@
       <p style="font-style: italic;">Note: Click on the logos of Nvidia and Quantinuum for instructions on educational materials!</p>
     </div>
   </main>
+
   <footer class="footer">
     <a href="index.html">Back</a>
   </footer>
+
+  <!-- Registration Modal -->
+  <div id="registrationModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Registration Form</h2>
+      <div id="registrationFormContainer">
+        <!-- Registration script will be inserted here -->
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("registrationModal");
+
+    // Get the link that opens the modal
+    var link = document.getElementById("registrationLink");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the link, open the modal and load the registration form
+    link.onclick = function(event) {
+      event.preventDefault(); // Prevent default link behavior
+      document.getElementById("registrationFormContainer").innerHTML = "<script type='text/javascript' src='https://survey.sogolytics.com/zdm/EmbedController.aspx?val=PsSsQYYRWsUXPsTTP&key=VsRYTXXQsUsPsPsP'><\/script>";
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
 </body>
 </html>
