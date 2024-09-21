@@ -143,20 +143,15 @@ a:active {
     color: lightpurple;
 }
 
-/* Default styles (sidenav takes up 200px) */
-.sidenav {
-    width: 200px;
-    ... (other styles)
-}
-/* Styles for screens less than 768px wide (mobile) */
 @media (max-width: 768px) {
   .sidenav {
-    width: 0; /* Collapse sidenav on mobile */
-    transition: width 0.5s ease-in-out; /* Smooth transition */
+    width: 0; /_ Collapse sidenav on mobile _/
+    transition: width 0.5s ease-in-out; /_ Smooth transition _/
   }
   
   .content {
-    margin-left: 0; /* Remove margin applied when sidenav is visible */
+    margin-left: 0; /_ Remove margin applied when sidenav is visible _/
+    padding: 10px; /_ Add padding for better spacing _/
   }
 }
 
