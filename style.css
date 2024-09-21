@@ -197,3 +197,10 @@ a:active {
   width: 100%; /* Increase button width by 10% */
   height: 100%; /* Increase button height by 10% */
 }
+
+@media (max-width: 768px) {
+         .your-element {
+             margin-left: 0; /_ Adjust margin or padding _/
+             width: 100%; /_ Ensure it takes full width _/
+         }
+     }
