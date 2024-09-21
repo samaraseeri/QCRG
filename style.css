@@ -200,7 +200,7 @@ a:active {
 
 @media (max-width: 768px) {
          .your-element {
-             margin-left: 0; /_ Adjust margin or padding _/
+             margin-left: 10; /_ Adjust margin or padding _/
              width: 100%; /_ Ensure it takes full width _/
          }
      }
