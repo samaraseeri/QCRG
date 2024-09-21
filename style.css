@@ -197,3 +197,15 @@ a:active {
   width: 100%; /* Increase button width by 10% */
   height: 100%; /* Increase button height by 10% */
 }
+@media (max-width: 768px) {
+  .sidenav {
+    width: 0; /_ Collapse sidenav on mobile _/
+    transition: width 0.5s ease-in-out; /_ Smooth transition _/
+  }
+  
+  .content {
+    margin-left: 0; /_ Remove margin applied when sidenav is visible _/
+    padding: 10px; /_ Add padding for better spacing _/
+  }
+}
+
