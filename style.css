@@ -166,33 +166,37 @@ a:active {
   }
 }
 
-/* Add functionality to toggle sidenav visibility using JavaScript */
-/* Style the buttons */
-
-.button-container {
-  display: flex; /* Flexbox for horizontal arrangement */
-  flex-direction: column; /* Stack buttons vertically */
-  position: fixed; /* Fix position in upper right corner */
-  top: 10px; /* Adjust top position from the top of the page */
-  right: 10px; /* Adjust right position from the right edge */
-}
-
+/* General Button Styling */
 .course-button,
 .UsefulLinks-button,
 .UseCases-button,
 .meetings-button,
-.resources-button{
-  background-color: #C2F0F0; /* Green color for buttons */
+.resources-button {
+  background-color: #C2F0F0;  /* Green color for buttons */
   color: white;
-  padding: 10px 20px;
-  /* No margin needed for vertical stacking */
+  padding: 20px;              /* Space inside the button */
   border: none;
-  cursor: pointer; /* Indicate clickable buttons */
-  border-radius: 50%; /* Make buttons circular */
-  font-size: 1.1em; /* Increase button font size by 10% (existing) */
-  width: 100%; /* Increase button width by 10% */
-  height: 100%; /* Increase button height by 10% */
+  cursor: pointer;           /* Indicate clickable buttons */
+  border-radius: 50%;        /* Circular shape for all buttons */
+  font-size: 1.1em;          /* Button text size */
+  width: 60px;               /* Fixed width for uniform size */
+  height: 60px;              /* Fixed height to ensure circular shape */
+  margin: 10px 0;            /* Add spacing between buttons */
+  display: flex;
+  justify-content: center;   /* Center the button text horizontally */
+  align-items: center;       /* Center the button text vertically */
 }
+
+/* Optional: Add hover effect */
+.course-button:hover,
+.UsefulLinks-button:hover,
+.UseCases-button:hover,
+.meetings-button:hover,
+.resources-button:hover {
+  background-color: #A2D9E9; /* Slightly darker shade for hover effect */
+}
+
+
 @media (max-width: 768px) {
   .sidenav {
     width: 0; /_ Collapse sidenav on mobile _/
