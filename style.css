@@ -177,10 +177,10 @@ a:active {
   padding: 20px;              /* Space inside the button */
   border: none;
   cursor: pointer;           /* Indicate clickable buttons */
-  border-radius: 50%;        /* Circular shape for all buttons */
+  border-radius: 50% !important; /* Circular shape for all buttons */
   font-size: 1.1em;          /* Button text size */
-  width: 60px;               /* Fixed width for uniform size */
-  height: 60px;              /* Fixed height to ensure circular shape */
+  width: 60px !important;    /* Fixed width for uniform size */
+  height: 60px !important;   /* Fixed height to ensure circular shape */
   margin: 10px 0;            /* Add spacing between buttons */
   display: flex;
   justify-content: center;   /* Center the button text horizontally */
@@ -193,9 +193,8 @@ a:active {
 .UseCases-button:hover,
 .meetings-button:hover,
 .resources-button:hover {
-  background-color: #A2D9E9; /* Slightly darker shade for hover effect */
+  background-color: #A2D9E9 !important; /* Slightly darker shade for hover effect */
 }
-
 
 @media (max-width: 768px) {
   .sidenav {
