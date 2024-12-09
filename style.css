@@ -1,30 +1,24 @@
 /* Main styling */
-
- 
 /* formatting of main body */
-
 body {
     margin: 0;
     background-color: lightyellow;
 }
 
 /* font color and placement of main title */
-
 h1 {
     color: black;
     margin-left: 20px;
 }
 
 /* font style and size for paragraphs */
-
-p { 
-   font-family: verdana;
-   font-size: 18px;
-   color: black;
+p {
+    font-family: verdana;
+    font-size: 18px;
+    color: black;
 }
 
 /* formatting of tables */
-
 th, td {
     padding: 15px;
     text-align: left;
@@ -36,19 +30,13 @@ th, td {
     box-sizing: border-box;
 }
 
-
-/* Style of borderd text */
+/* Style of bordered text */
 .dotted {border-style: dotted;}
 .dashed {border-style: dashed;}
 .hidden {border-style: hidden;}
-.solid {border-style: solid;
-         font-size: 10px;
-         width: 500px;
-         margin-left: 25px;}
-
+.solid {border-style: solid; font-size: 10px; width: 500px; margin-left: 25px;}
 
 /* Style the side navigation */
-
 .sidenav {
     height: 100%;
     width: 200px;
@@ -60,9 +48,7 @@ th, td {
     overflow-x: hidden;
 }
 
-
 /* Side navigation links */
-
 .sidenav a {
     color: white;
     padding: 16px;
@@ -71,23 +57,19 @@ th, td {
 }
 
 /* Change color on hover */
-
 .sidenav a:hover {
     background-color: #00303F;
     color: white;
 }
 
 /* Style the content */
-
 .content {
     margin-left: 200px;
     padding-left: 20px;
     color: black;
 }
 
-
 /* Columns for images */
-
 .column {
     float: left;
     width: 200px;
@@ -112,7 +94,6 @@ th, td {
 }
 
 /* Style the footer */
-
 .footer {
     background-color: #C2F0F0;
     color: white;
@@ -120,90 +101,53 @@ th, td {
 }
 
 /* unvisited link */
-
-a:link {
-    color: lightpurple;
-}
+a:link { color: lightpurple; }
 
 /* visited link */
-
-a:visited {
-    color: hotpink;
-}
+a:visited { color: hotpink; }
 
 /* mouse over link */
-
-a:hover {
-    color: lightpurple;
-}
+a:hover { color: lightpurple; }
 
 /* selected link */
-
-a:active {
-    color: lightpurple;
-}
+a:active { color: lightpurple; }
 
 @media (max-width: 768px) {
-  .sidenav {
-    width: 0; /_ Collapse sidenav on mobile _/
-    transition: width 0.5s ease-in-out; /_ Smooth transition _/
-  }
-  
-  .content {
-    margin-left: 0; /_ Remove margin applied when sidenav is visible _/
-    padding: 10px; /_ Add padding for better spacing _/
-  }
+    .sidenav {
+        width: 0; /* Collapse sidenav on mobile */
+        transition: width 0.5s ease-in-out; /* Smooth transition */
+    }
+    
+    .content {
+        margin-left: 0; /* Remove margin applied when sidenav is visible */
+        padding: 10px; /* Add padding for better spacing */
+    }
 }
 
 /* Optional: Show/Hide sidenav on mobile with a button */
-.sidenav-toggle {
-  display: none; /* Hidden by default */
-}
+.sidenav-toggle { display:none; /* Hidden by default */ }
 
 @media (max-width: 768px) {
-  .sidenav-toggle {
-    display: block; /* Show toggle button on mobile */
-  }
+   .sidenav-toggle { display:block; /* Show toggle button on mobile */ }
 }
 
-/* General Button Styling */
-.course-button,
-.UsefulLinks-button,
-.meetings-button,
-.resources-button {
-  background-color: #C2F0F0;  /* Green color for buttons */
-  color: white;
-  padding: 20px;              /* Space inside the button */
-  border: none;
-  cursor: pointer;           /* Indicate clickable buttons */
-  border-radius: 50% !important; /* Circular shape for all buttons */
-  font-size: 1.1em;          /* Button text size */
-  width: 60px !important;    /* Fixed width for uniform size */
-  height: 60px !important;   /* Fixed height to ensure circular shape */
-  margin: 10px 0;            /* Add spacing between buttons */
-  display: flex;
-  justify-content: center;   /* Center the button text horizontally */
-  align-items: center;       /* Center the button text vertically */
+/* Style the buttons */
+.button-container {
+   display:flex; /* Flexbox for horizontal arrangement */
+   flex-direction:column; /* Stack buttons vertically */
+   position:fixed; /* Fix position in upper right corner */
+   top:10px; /* Adjust top position from the top of the page */
+   right:10px; /* Adjust right position from the right edge */
 }
 
-/* Optional: Add hover effect */
-.course-button:hover,
-.UsefulLinks-button:hover,
-.UseCases-button:hover,
-.meetings-button:hover,
-.resources-button:hover {
-  background-color: #A2D9E9 !important; /* Slightly darker shade for hover effect */
+.course-button, .UsefulLinks-button, .UseCases-button, .meetings-button, .resources-button{
+   background-color:#C2F0F0; /* Green color for buttons */
+   color:white; 
+   padding:10px 20px; /* No margin needed for vertical stacking */ 
+   border:none; 
+   cursor:pointer; /* Indicate clickable buttons */ 
+   border-radius:50%; /* Make buttons circular */ 
+   font-size:1.1em; /* Increase button font size by 10% (existing) */ 
+   width:auto; /* Increase button width by 10% */ 
+   height:auto; /* Increase button height by 10% */ 
 }
-
-@media (max-width: 768px) {
-  .sidenav {
-    width: 0; /_ Collapse sidenav on mobile _/
-    transition: width 0.5s ease-in-out; /_ Smooth transition _/
-  }
-  
-  .content {
-    margin-left: 0; /_ Remove margin applied when sidenav is visible _/
-    padding: 10px; /_ Add padding for better spacing _/
-  }
-}
-
