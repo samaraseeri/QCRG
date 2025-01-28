@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Samar Aseeri - Bio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            padding: 0 20px; /* Add padding to the body to adjust text alignment */
+        }
+        img {
+            max-width: 200px; /* Set a maximum width for the image */
+            border-radius: 10px; /* Optional: add rounded corners to the image */
+        }
+    </style>
+</head>
+<body>
+    <h1>Dr. Samar Aseeri</h1>
+    <img src="pic.png" alt="Dr. Samar Aseeri">
+    
+    <h2>About Dr. Aseeri</h2>
+    <p>Dr. Samar Aseeri is a **Computational Scientist** and is virtually a founder of **KAUST** and the **KAUST Supercomputing Lab**. She was at **IBM TJ Watson Lab** in early 2009, before joining KAUST.</p>
+    
+    <h2>Education</h2>
+    <p>She is a **PhD alumna** of **Umm Al-Qura University** in **Applied Mathematics** and is currently completing her **MBA in Artificial Intelligence** at the **University of Cumbria**.</p>
+    
+    <h2>Research and Contributions</h2>
+    <p>Dr. Aseeri is also the co-convenor, alongside **Prof. David Keyes**, of the **Quantum Computing Reading Group** at KAUST, contributing significantly to the field of quantum computing.</p>
+    
+    <footer class="footer">
+        <a href="index.html">Back to Home</a>
+    </footer>
+</body>
+</html>
