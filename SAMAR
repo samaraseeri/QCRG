@@ -17,7 +17,7 @@
 </head>
 <body>
     <h1>Dr. Samar Aseeri</h1>
-    <img src="pic.png" alt="Dr. Samar Aseeri">
+    <img src="pic.jpg" alt="Dr. Samar Aseeri">
     
     <h2>About Dr. Aseeri</h2>
     <p>Dr. Samar Aseeri is a **Computational Scientist** and is virtually a founder of **KAUST** and the **KAUST Supercomputing Lab**. She was at **IBM TJ Watson Lab** in early 2009, before joining KAUST.</p>
@@ -27,6 +27,13 @@
     
     <h2>Research and Contributions</h2>
     <p>Dr. Aseeri is also the co-convenor, alongside **Prof. David Keyes**, of the **Quantum Computing Reading Group** at KAUST, contributing significantly to the field of quantum computing.</p>
+
+    <h2>Resources</h2>
+    <p>For more information about Dr. Samar Aseeri, you can visit the following resources:</p>
+    <ul>
+        <li><a href="https://academia.kaust.edu.sa/en/persons/samar-aseeri" target="_blank">KAUST Profile</a></li>
+        <li><a href="https://cemse.kaust.edu.sa/profiles/samar-aseer" target="_blank">CEMSE Profile</a></li>
+    </ul>
     
     <footer class="footer">
         <a href="index.html">Back to Home</a>
