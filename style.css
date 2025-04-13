@@ -1,0 +1,253 @@
+/* Main styling */
+
+/* Add this to ensure the toggle square is visible on mobile */
+@media (max-width: 768px) {
+    .border-toggle {
+        display: flex; /* Ensure it is displayed on mobile */
+    }
+}
+
+/* Existing styles for the border toggle */
+.border-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: #00303F; /* Background color for the square */
+    cursor: pointer; /* Change cursor to pointer */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Space lines evenly */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.border-lines {
+    width: 100%;
+    height: 4px; /* Thickness of the lines */
+    background-color: white; /* Color of the lines */
+}
+
+.border-list {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 50px; /* Position below the toggle square */
+    left: 10px;
+    background-color: #f2f2f2; /* Background color for the list */
+    border: 1px solid #00303F; /* Border around the list */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+
+/* formatting of main body */
+
+body {
+    margin: 0;
+    background-color: lightyellow;
+}
+
+/* font color and placement of main title */
+
+h1 {
+    color: black;
+    margin-left: 20px;
+}
+
+/* font style and size for paragraphs */
+
+p { 
+   font-family: verdana;
+   font-size: 18px;
+   color: black;
+}
+
+/* formatting of tables */
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    background-color: #f2f2f2;
+    color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Style of borderd text */
+.dotted {border-style: dotted;}
+.dashed {border-style: dashed;}
+.hidden {border-style: hidden;}
+.solid {border-style: solid;
+         font-size: 10px;
+         width: 500px;
+         margin-left: 25px;}
+
+
+/* Style the side navigation */
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #00303F;
+    overflow-x: hidden;
+}
+
+
+/* Side navigation links */
+
+.sidenav a {
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color on hover */
+
+.sidenav a:hover {
+    background-color: #00303F;
+    color: white;
+}
+
+/* Style the content */
+
+.content {
+    margin-left: 200px;
+    padding-left: 20px;
+    color: black;
+}
+
+
+/* Columns for images */
+
+.column {
+    float: left;
+    width: 200px;
+    padding: 10px;
+}
+
+.column img {
+    float: center;
+    margin-top: 12px;
+}
+
+.column desc {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+
+.footer {
+    background-color: #C2F0F0;
+    color: white;
+    padding: 10px;
+}
+
+/* unvisited link */
+
+a:link {
+    color: lightpurple;
+}
+
+/* visited link */
+
+a:visited {
+    color: hotpink;
+}
+
+/* mouse over link */
+
+a:hover {
+    color: lightpurple;
+}
+
+/* selected link */
+
+a:active {
+    color: lightpurple;
+}
+
+@media (max-width: 768px) {
+  .sidenav {
+    width: 0; /_ Collapse sidenav on mobile _/
+    transition: width 0.5s ease-in-out; /_ Smooth transition _/
+  }
+  
+  .content {
+    margin-left: 0; /_ Remove margin applied when sidenav is visible _/
+    padding: 10px; /_ Add padding for better spacing _/
+  }
+}
+
+/* Optional: Show/Hide sidenav on mobile with a button */
+.sidenav-toggle {
+  display: none; /* Hidden by default */
+}
+
+@media (max-width: 768px) {
+  .sidenav-toggle {
+    display: block; /* Show toggle button on mobile */
+  }
+}
+
+/* Add functionality to toggle sidenav visibility using JavaScript */
+/* Style the buttons */
+
+.button-container {
+  display: flex; /* Flexbox for horizontal arrangement */
+  flex-direction: column; /* Stack buttons vertically */
+  position: fixed; /* Fix position in upper right corner */
+  top: 10px; /* Adjust top position from the top of the page */
+  right: 10px; /* Adjust right position from the right edge */
+}
+
+.course-button,
+.UsefulLinks-button,
+.meetings-button,
+.resources-button,
+.present-paper-button{
+  background-color: #C2F0F0; /* Green color for buttons */
+  color: white;
+  padding: 10px 20px;
+  /* No margin needed for vertical stacking */
+  border: none;
+  cursor: pointer; /* Indicate clickable buttons */
+  border-radius: 50%; /* Make buttons circular */
+  font-size: 1.1em; /* Increase button font size by 10% (existing) */
+  width: 100%; /* Increase button width by 10% */
+  height: 100%; /* Increase button height by 10% */
+}
+@media (max-width: 768px) {
+  .sidenav {
+    width: 0; /_ Collapse sidenav on mobile _/
+    transition: width 0.5s ease-in-out; /_ Smooth transition _/
+  }
+  
+  .content {
+    margin-left: 0; /_ Remove margin applied when sidenav is visible _/
+    padding: 10px; /_ Add padding for better spacing _/
+  }
+}
+
+
+
+/* Mobile only: show border toggle */
+@media (min-width: 769px) {
+    .border-toggle, .border-list {
+        display: none !important;
+    }
+}
